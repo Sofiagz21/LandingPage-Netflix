@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/utils/images/logo.svg" type="image/x-icon" >
+    <title>Netflix| El robo del siglo</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="./src/utils/images/logo.png" alt=""></a>
+        <ul class="navigation">
+            <li> <a href="#"> Home</a></li>
+            <li> <a href="#"> Tv Shows</a></li>
+            <li> <a href="#"> Películas</a></li>
+            <li> <a href="#"> Reciente</a></li>
+            <li> <a href="#"> Mi lista</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>  
+    <div class="banner">
+        <img src="./src/utils/images/bg.jpg" class="bg "alt="">
+        <div class="content">
+            <img src="./src/utils/images/name.png" class="titleSerie" alt="">
+            <h4>
+                <span>2020</span>
+                <span><i>+16</i></span>
+                <span>1 temporada</span>
+                <span>Series sobre crímenes</span>
+            </h4>
+            <p>Colombia, 1994. Una banda de ladrones planea el mayor robo del país: un golpe al Banco de la República de Valledupar. 
+                Inspirada en hechos reales.</p>
+            <div class="buttons">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Play</a>
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>Mi lista</a>
+            </div>
+        </div>
+        <a class="play" onclick="toggleVideo();"><img src="./src/utils/images/play.png" alt=""> Mirar trailer</a>
+    </div>  
+    <div class="trailer">
+        <video src="./src/utils/video/El Robo del Siglo _ Tráiler oficial _ Netflix.mp4" controls="true" autoplay="true"></video>
+        <img src="./src/utils/images/close.png" class="close" onclick="toggleVideo()" alt="">
+    </div>
+    <div class="contentEpisodes">
+        <div class="line"></div>
+        <div class="gana">
+            <span>Ganadora de tres premios inidia Catalina, inculidos
+                a mejor actor (Andrés Parra) y a la mejor telenovela, serie o miniserie.
+            </span>
+        </div>
+        <div class="line"></div>
+        <div class="titleEpisode">
+            <div class="contentEpisode">
+                <div class="epi">
+                    <h1>Episodios</h1>
+                </div>
+                <div class="elRobo">
+                    <h2>El robo del siglo</h2>
+                </div>
+                <div class="minise">
+                    <h3>Misierie</h3>
+                    <h4>Año de estreno: 2020</h4>
+                </div>
+            </div>
+        </div>
+        <div class="episodes">
+            <div class="contentE">
+                <div class="episode">
+                    <div class="episodeimg">
+                        <img src="./src/utils/images/capitulos/Capitulo1.PNG" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>1. Un negocio bonito</h3>
+                        <p>Chayo, un ladrón endeudado, planea robar el Banco de la República de Valledupar, pero primero debe convencer a doña K y al Abogado, un viejo conocido.</p>
+                    </div>
+                </div>
+                <div class="episode">
+                    <div class="episodeimg">
+                        <img src="./src/utils/images/capitulos/Capitulo2.PNG" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>2. La titular</h3>
+                        <p>Mientras afinan los detalles del golpe, Chayo y el Abogado forman un equipo para el robo. Llega el día del atraco..., y los problemas surgen desde el principio.</p>
+                    </div>
+                </div>
+                <div class="episode">
+                    <div class="episodeimg">
+                        <img src="./src/utils/images/capitulos/Capitulo3.PNG" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>3. Manosucia</h3>
+                        <p>La operación arranca con el pie izquierdo: abrir la bóveda es más difícil de lo imaginado, y la duda se apodera de la banda</p>
+                    </div>
+                </div>
+                <div class="episode">
+                    <div class="episodeimg">
+                        <img src="./src/utils/images/capitulos/Capitulo4.PNG" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>4. Escape de Valledupar</h3>
+                        <p>Los ladrones celebran una victoria, pero no todo está ganado. Chayo y doña K tienen problemas para transportar el botín a Bogotá.</p>
+                    </div>
+                </div>
+                <div class="episode">
+                    <div class="episodeimg">
+                        <img src="./src/utils/images/capitulos/Capitulo5.PNG" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>5. Billetes malditos</h3>
+                        <p>La banda descubre que la policía está siguiendo de cerca todos sus pasos. Chayo y doña K reciben un ultimátum que los deja helados.</p>
+                    </div>
+                </div>
+                <div class="episode">
+                    <div class="episodeimg">
+                        <img src="./src/utils/images/capitulos/Capitulo6.PNG" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>6. Todo el dinero del mundo</h3>
+                        <p>La ambición y la traición se cuelan por las rendijas y desencadenan la ruina del equipo. ¿Podrá alguien salvarse del inminente final?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <h3>¿Preguntas? Llama al <a href="tel: 01 8000 917 1564">01 8000 917 1564</a></h3>
+            <div class="preguntas">
+                <h4> <a href="https://help.netflix.com/es/node/412">Preguntas Frecuentes</a></h4>
+                <h4><a href="https://help.netflix.com/es/">Centros de ayuda </a></h4>
+                <h4><a href="https://www.netflix.com/co/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fyouraccount">Cuenta </a></h4>
+                <h4><a href="https://media.netflix.com/es/">Prensa </a></h4>
+                <h4><a href="https://ir.netflix.net/ir-overview/profile/default.aspx">Realaciones de Inversionistas </a></h4>
+                <h4> <a href="https://jobs.netflix.com">Empleo</a></h4>
+                <h4><a href="https://www.netflix.com/co/redeem">Canjear tarjetas de regalo</a> </h4>
+                <h4><a href="https://www.netflix.com/gift-cards">Comprar tarjetas de regalo </a></h4>
+                <h4><a href="https://devices.netflix.com/es/">Formas de Ver </a></h4>
+                <h4> <a href="https://help.netflix.com/legal/termsofuse">Térmninos de uso</a></h4>
+                <h4><a href="https://help.netflix.com/legal/privacy">Privacidad </a></h4>
+                <h4>Preferencias de Cookes  <a href=""></a></h4>
+                <h4> <a href=" https://help.netflix.com/legal/corpinfo">Información corporativa</a></h4>
+                <h4> <a href="https://help.netflix.com/es/contactus">Contáctanos</a></h4>
+                <h4> <a href="https://fast.com/es/">Prueba de Velocidad</a></h4>
+                <h4><a href="https://help.netflix.com/legal/notices">Avisos legales</a></h4>
+                <h4><a href="https://www.netflix.com/co/browse/genre/839338">Solo en Netflix</a> </h4>
+            </div>
+        </footer>
+
+    </div>
+<script>
+    function toggleVideo(){
+        const trailer= document.querySelector('.trailer');
+        const video= document.querySelector('video')
+        trailer.classList.toggle('active')
+        video.currentTime = 0;
+        video.pause();
+    }
+</script>
+</body>
+</html>

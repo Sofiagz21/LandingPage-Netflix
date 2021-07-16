@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/* estilos generales para la página*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* estilos para el body*/
+body{
+    background-color: black;
+}
+
+/* estilos para el header*/
+
+header{
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 30px 100px;
+ z-index: 100;
+}
+
+header .logo img{
+   max-width: 150px; 
+}
+
+.navigation{
+    display: flex;
+}
+
+.navigation li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.navigation li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500px;
+    letter-spacing: 1px;
+}
+
+.navigation li:hover a{
+    color: #de0611;
+}
+
+.search{
+    position: relative;
+    width: 300px;
+    height: 40px;
+}
+
+.search input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 2555, 0.5);
+    outline: none;
+    backdrop-filter:blur(10px);
+    border-radius:4px;
+    padding: 0 10px 0 45px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.search input::placeholder{
+    color: #fff;
+}
+
+.search .fa-search{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    padding-right: 10px;
+    color: #fff;
+    border-right: 1px solid #fff;
+} 
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.banner .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content{
+    position: relative;
+    z-index: 1;
+    max-width:550px ;
+}
+
+.titleSerie{
+    max-width: 450px;
+    margin-bottom: 20px;
+}
+
+.banner .content h4{
+font-weight: 700;
+color: rgba( 255,255,255, 0.9);
+}
+
+.banner .content h4 span{
+   padding: 0 10px;
+   border-right: 1px solid rgba( 255,255,255, 0.5);
+}
+.banner .content h4 span:first-child{
+    padding-left: 0;
+
+}
+.banner .content h4 span:last-child{
+    border-right: none;
+}
+
+.banner .content h4 span i{
+    background: #de0611;
+    color: #fff;
+    padding: 0 8px;
+    display: inline-block;
+    font-style: normal;
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+.banner .content p{
+    font-size: 1em;
+    font-weight: 500;
+    list-style: 1.5em;
+    color: #fff;
+    margin: 10px 0 20px;
+}
+
+.banner .content .buttons{
+    position: relative;
+}
+
+.banner .content .buttons a{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    background: #de0611;
+    color:#fff;
+    padding:6px 20px;
+    text-decoration: none;
+    font-weight: 500px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.banner .content .buttons a:nth-child(2){
+    background: rgba( 0,0,0, 0.5);
+    border: 1px solid rgba( 255,255,255, 0.5) ;
+}
+
+.banner .content .buttons a:hover:nth-child(2){
+ background: #de0611;
+}
+
+.fa-play, .fa-plus{
+ margin-right: 10px;
+ font-size: 15px;
+}
+
+.play{
+    position: absolute;
+    bottom: 50px;
+    left:100px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.play img{
+    margin-right: 50px;
+    max-width: 50px;
+}
+
+.trailer{
+    position: fixed;
+    top: 50%;
+    transform: translate(0%,-50%);
+    z-index: 100000;
+    backdrop-filter: blur(20px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.trailer video{
+    max-width: 900px;
+    outline: none;
+}
+
+.trailer.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    filter: invert(1);
+    max-width: 32px;
+}
+
+.contentEpisodes{
+    padding: 90px 30px 10px 30px;
+    width: 100%;
+    height: 100%;
+    background-color: #181818;
+}
+
+.line{
+    background-color: rgba( 255,255,255, 0.5) ;
+    height: 3px;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+}
+.gana{
+    padding: 20px;
+    color: rgba( 255,255,255, 0.5) ;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.titleEpisode{
+    margin-top: 90px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.epi h1{
+    color: #fff;
+    margin-right: 3px;
+    border-right: 1px solid #949C9A;
+}
+
+.elRobo h2{
+    color: #949C9A;
+    margin: 5px 0 0 5px;
+}
+.contentEpisode{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+}
+
+.minise h3{
+    color: #949C9A;
+    margin-top: 8px;
+    letter-spacing: 1px;
+}
+
+.minise h4{
+    color:#fff;
+    margin-top: 20px;
+}
+
+.episodes{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.contentE{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 15px;
+    margin: 30px;
+}
+.episode{
+    width: 400px;
+    margin-bottom: 30px;
+}
+.text h3{
+    color: #fff;
+    margin-top: 8px;
+}
+
+.text p{
+    color: #949C9A;
+    font-size: 15px;
+    font-weight: 500;
+}
+.episodeimg img{
+    width: 400px;
+}
+
+footer{
+    margin-top: 70px;
+    color: #949C9A;
+}
+footer h3{
+    margin: 10px 0 15px 15px;
+    
+}
+
+footer h3 a{
+    text-decoration: none;
+    color: #949C9A;
+}
+
+footer h3 a:hover{
+    color: #fff;
+}
+.preguntas{
+    margin: 20px 10px 0 100px;
+    display: grid;
+    gap: 5px 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+
+.preguntas a{
+    text-decoration: none;
+    color: #949C9A;
+}
+
+.preguntas a:hover{
+    color: #fff;
+}
+
+@media (max-width:991px){
+
+    header{
+        padding: 20px 50px;
+        flex-direction: column;
+    }
+
+    .navigation{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 10px 0;
+    }
+
+    .banner{
+        padding: 100px 50px;
+    }
+
+    .banner .play{
+        left: 50px;
+        font-size: 1em;
+    }
+
+    .play img{
+        margin-right: 10px;
+        max-width: 40px;
+    }
+
+    .trailer video{
+        max-width: 90%;
+    }
+
+    .contentE{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 15px;
+        margin: 20px;
+    }
+    .episode{
+        width: 300px;
+        margin-bottom: 30px;
+    }
+    
+    
+    .text p{
+        color: #949C9A;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .episodeimg img{
+        width: 300px;
+    }
+    .preguntas{
+        margin: 20px 10px 0 100px;
+        display: grid;
+        gap: 5px 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8,1fr);
+    }
+}
+
+@media (max-width:600px){
+    
+    header{
+        padding: 20px;
+    }
+
+    .search{
+        position:relative;
+        width: calc(100%-20px);
+        height: 40px;
+    }
+
+    .banner{
+        padding: 220px 20px 100px;
+    }
+
+    .banner .play{
+        left: 20px;
+        font-size: 1em;
+        bottom: 30px;
+    }
+
+    .contentE{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1,1fr);
+        gap: 1px;
+        margin: 10px;
+    }
+    .episode{
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    .text h3{
+        color: #fff;
+        margin-top: 8px;
+    }
+    
+    .text p{
+        color: #949C9A;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .episodeimg img{
+        width: 200px;
+    }
+    .preguntas{
+        margin: 20px 10px 0 100px;
+        display: grid;
+        gap: 5px 10px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(17,1fr);
+    }
+}
